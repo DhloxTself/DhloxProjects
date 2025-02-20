@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhlox Projects</title>
+    <!-- Link para a fonte Poppins do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif; /* Mudando a fonte para Poppins */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Para evitar a barra de rolagem */
+            background: url('https://cdn.discordapp.com/attachments/1336092479971262574/1342209309072818290/63_Sem_Titulo_20250220190029.png?ex=67b8cd54&is=67b77bd4&hm=dd613926512eb7dd83a5331939d3f913872af56b1540d12a7dd85b1e95684a18') no-repeat center center fixed; /* Imagem de fundo */
+            background-size: cover; /* Faz a imagem cobrir toda a tela */
+        }
+
+        .container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            z-index: 10; /* Coloca o conteúdo acima do fundo */
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 600; /* Peso mais forte para o título */
+        }
+
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .project {
+            text-align: center;
+        }
+
+        .project img {
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* Ajustando as imagens para o mesmo tamanho */
+        .vs-dhlox img, .vs-gou img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 400; /* Peso da fonte do botão */
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dhlox Projects</h1>
+
+        <!-- Container para os projetos lado a lado -->
+        <div class="projects">
+            <!-- VS Dhlox com link -->
+            <div class="project vs-dhlox">
+                <a href="https://gamebanana.com/mods/530" target="_blank">
+                    <img src="https://images.gamebanana.com/img/ss/mods/530-90_667d84134b3c9.jpg" alt="VS Dhlox" />
+                </a>
+                <br>
+                <a href="https://gamebanana.com/mods/530" class="btn" target="_blank">Clique agora pra jogar o VS Dhlox v1</a>
+            </div>
+
+            <!-- VS Gou com link -->
+            <div class="project vs-gou">
+                <a href="https://gamebanana.com/mods/485885" target="_blank">
+                    <img src="https://images.gamebanana.com/img/ss/mods/530-90_65d53618d7bb1.jpg" alt="VS Gou" />
+                </a>
+                <br>
+                <a href="https://gamebanana.com/mods/485885" class="btn" target="_blank">Clique agora pra jogar o VS Gou</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
